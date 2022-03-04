@@ -63,7 +63,8 @@ async def on_message(message):
                 await message.delete()
                 f.write("\n" + id + ", " + addr)
     else:
-        data = "{} address format incorrect, it should be 0x`40 characters as a mix of 0-9 / a-f / A-F`".format(username)
+        data = '{} address format incorrect, it should be 0x`40 characters' \
+                'as a mix of 0-9 / a-f / A-F`'.format(username)
         await channel.send(data)
         await message.delete()
         return
