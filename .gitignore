@@ -1,5 +1,7 @@
 # IDE files
 .idea
+__pycache__/
 
 # Config files
 config.py
+
